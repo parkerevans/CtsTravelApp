@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.intervalintl.ctsapp.Customer" table="CUSTOMER">
+		<id name="id" type="long" column="ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="firstName">
+			<column name="CUST_FIRSTNAME" />
+		</property>
+		<property name="lastName">
+			<column name="CUST_LASTNAME" />
+		</property>
+		<property name="address1">
+			<column name="CUST_ADDRESS1" />
+		</property>
+		<property name="address2">
+			<column name="CUST_ADDRESS2" />
+		</property>
+		<property name="city">
+			<column name="CUST_CITY" />
+		</property>
+		<property name="state">
+			<column name="CUST_STATE" />
+		</property>
+		<property name="zip">
+			<column name="CUST_ZIP" />
+		</property>
+		<property name="telephone">
+			<column name="CUST_MAIN_PHONE" />
+		</property>
+		<property name="email">
+			<column name="CUST_EMAIL" />
+		</property>
+		<property name="status">
+			<column name="CUST_STATUS" />
+		</property>
+	</class>
+</hibernate-mapping>
